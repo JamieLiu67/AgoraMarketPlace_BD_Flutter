@@ -42,5 +42,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-/android/libs
-/Resource
+
+
+/android/libs/extension_aar-release.aar
+/Resource/

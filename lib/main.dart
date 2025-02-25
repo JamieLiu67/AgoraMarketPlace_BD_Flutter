@@ -110,10 +110,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     _rtcEngine.registerEventHandler(_rtcEngineEventHandler);
     await _loadVersion();
-    if (Platform.isAndroid) {
-      await _rtcEngine.loadExtensionProvider(
-          path: 'AgoraByteDanceExtension', unloadAfterUse: false);
-    }
+    // if (Platform.isAndroid) {
+    //   await _rtcEngine.loadExtensionProvider(
+    //       path: 'AgoraByteDanceExtension', unloadAfterUse: false);
+    // }
 
     await _rtcEngine.enableExtension(
         provider: "ByteDance", extension: "Effect", enable: _enableExtension);
