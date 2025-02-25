@@ -69,9 +69,35 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - Resource/
+    - Resource/LicenseBag.bundle/
     - Resource/StickerResource.bundle/
+    - Resource/ModelResource.bundle/
     - Resource/StickerResource.bundle/stickers/
+    - Resource/StickerResource.bundle/icon/
     - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/2DSticker/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/FaceStretch/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/Filter/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/Filter/filter/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/config.json
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/2DSticker/hzvhzuic_1544608284.zhaocaizhua/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/2DSticker/ljvewfar_1543809965.lingdang/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/2DSticker/miptmykv_1543809708.erduo/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/2DSticker/pbfhnjmi_1543809926.huzi/
+    - Resource/StickerResource.bundle/stickers/stickers_zhaocaimao/2DSticker/sqdrsscs_1544608368.zhua/
+    - Resource/ModelResource.bundle/action_recognition/
+    - Resource/ModelResource.bundle/avatar3d/
+    - Resource/ModelResource.bundle/avatar_drive/
+    - Resource/ModelResource.bundle/bach_skeleton/
+    - Resource/ModelResource.bundle/bingo_facegan_model/
+    - Resource/ModelResource.bundle/c1/
+    - Resource/ModelResource.bundle/c2/
+    - Resource/ModelResource.bundle/facebeautifymodel/
+    - Resource/ModelResource.bundle/facefitting/
+    - Resource/ModelResource.bundle/faceganmodel/
+    - Resource/ModelResource.bundle/licenseface_detection/
+    - Resource/ModelResource.bundle/object_tracking/
+    - Resource/ModelResource.bundle/ttfacemodel/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

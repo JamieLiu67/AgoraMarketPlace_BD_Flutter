@@ -19,8 +19,6 @@ const stickerPath =
 const licensePath =
     'Resource/agora_test_20250224_20250930_io.agora.rte.extension.bytedance.peter_4.6.2_2531.licbag';
 
-//const licensePath = 'Resource/LicenseBag.bundle/agora_test_20250224_20250930_io.agora.rte.extension.bytedance.peter_4.6.2_2531.licbag';
-
 void main() {
   runApp(const MyApp());
 }
@@ -101,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
             '[onExtensionStartedWithContext] ExtensionContext: $context');
         if (context.providerName == 'ByteDance' &&
             context.extensionName == 'Effect') {
-          _initSTExtension();
+          _initBDExtension();
         }
       },
       onExtensionErrorWithContext:
@@ -112,6 +110,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     _rtcEngine.registerEventHandler(_rtcEngineEventHandler);
     await _loadVersion();
+    if (Platform.isAndroid) {
+      await _rtcEngine.loadExtensionProvider(
+          path: 'AgoraByteDanceExtension', unloadAfterUse: false);
+    }
 
     await _rtcEngine.enableExtension(
         provider: "ByteDance", extension: "Effect", enable: _enableExtension);
@@ -212,7 +214,7 @@ class _MyHomePageState extends State<MyHomePage> {
         value: jsonEncode({'strPath': ''}));
   }
 
-  Future<void> _initSTExtension() async {
+  Future<void> _initBDExtension() async {
     final licenseRealPath = await _copyAsset(licensePath);
     await _rtcEngine.setExtensionProperty(
         provider: 'ByteDance',
