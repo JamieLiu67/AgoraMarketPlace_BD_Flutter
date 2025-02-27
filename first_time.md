@@ -1,5 +1,5 @@
 # What is this?
-It's a flutter demo for AgoraMarketPlace ByteDance beauty extensions,that can allow you running on Android and IOS.
+It's a flutter demo for AgoraMarketPlace ByteDance beauty extensions,that can allow you running on Android(For now).
 
 AgoraMarketPlace(EN): https://www.agora.io/en/agora-extensions-marketplace/
 AgoraMarketPlace(CN): https://www.shengwang.cn/cn/marketplace
